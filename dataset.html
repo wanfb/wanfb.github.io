@@ -1,0 +1,233 @@
+<html>
+
+<head>
+    <link rel="StyleSheet" href="style.css" type="text/css" media="all">
+    <title>VC-Clothes</title>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body>
+    <br>
+    <div class="center-div">
+        <span style="font-size:30px">When Person Re-identification Meets Changing Clothes.</span>
+    </div>
+
+    <br>
+    <table align="center" width="600px">
+        <tbody>
+            <tr>
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:18px"><a href="#">Fangbin Wan</a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:18px"><a href="#">Yang Wu</a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:18px"><a href="#">Xuelin Qian</a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:18px"><a href="#">Yanwei Fu</a></span>
+                    </div>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table align="center" width="700px">
+        <tbody>
+            <tr>
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:18px">Fudan University &nbsp; &nbsp; Kyoto University</span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <hr>
+    <div class="center-div">
+        <h1>Abstract</h1>
+    </div>
+    <table align="center" width="800px">
+        <td>
+            <div>
+            <span style="font-size:18px"> Person re-identification (Reid) is now an active research 
+                topic for AI-based video surveillance applications such as specific person search, 
+                but the practical issue that the target person(s) may change clothes (clothes inconsistency 
+                problem) has been overlooked for long. For the first time, this paper systematically studies 
+                this problem. We first overcome the difficulty of lack of suitable dataset, by collecting a 
+                small yet representative real dataset for testing whilst building a large realistic synthetic 
+                dataset for training and deeper studies. Facilitated by our new datasets, we are able to conduct 
+                various interesting new experiments for studying the influence of clothes inconsistency. We find 
+                that changing clothes makes Reid a much harder problem in the sense of bringing difficulties to 
+                learning effective representations and also challenges the generalization ability of previous 
+                Reid models to identify persons with unseen (new) clothes. Representative existing Reid models 
+                are adopted to show informative results on such a challenging setting, and we also provide some 
+                preliminary efforts on improving the robustness of existing models on handling the clothes 
+                inconsistency issue in the data. We believe that this study can be inspiring and helpful 
+                for encouraging more researches in this direction.
+            </div>
+        </td>
+       
+    </table>
+    <br><br>
+
+    <hr>
+    <div class="center-div">
+        <h1>Datasets</h1>
+    </div>
+
+    <table align="center" width="800px">
+        <td>
+            <div>
+            <span style="font-size:18px">VC-Clothes has 512 identities, 4 scenes (cameras) and on average 9 
+                images/scene for each identity and total number of 19,060 images. We equally split the dataset 
+                by identities, 256 identities in training set and the other 256 in testing set. In test data, 
+                we randomly chose 4 images per person from each camera as query, while the other images serve 
+                as gallery images. Thus, we have altogether 9449 images in training, 1020 images in query and 
+                8591 in the gallery.
+            </div>
+        </td>
+    </table>
+
+    <br>
+    <table align="center" width="500px">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="center-div">
+                        <a href="#"><img src="./resources/images/dataset.jpg" width="600px"></a><br>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="center-div">
+                        <span style="font-size:16px"><i>VC-Clothes Dataset</i>
+                        </span></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+    <table align="center" width="800px">
+        <td>
+            <div>
+            <span style="font-size:18px"> Real28 is collected in 3 different days (with different clothing) by 
+                4 cameras of 28 different identities and consists of altogether4,324 images with 2 indoor scenes and 2 outdoors.
+            </div>
+        </td>
+    </table>
+    <br>
+
+    <table align="center" width="500px">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="center-div">
+                        <a href="#"><img src="./resources/images/real28.jpg" width="600px"></a><br>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="center-div">
+                        <span style="font-size:16px"><i>Real28 Dataset</i>
+                        </span></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+    <table align="center" width="800px">
+        <td>
+            <div>
+            <span style="font-size:18px"> <b>Naming Rule of the images.</b> In bbox "0001_02_03_04.jpg", "0001" is the identity. 
+                "02" means the image from Camera 2. "03" means the number of the clothes that the person is wearing. 
+                "04" is the 4-th image of all the images in Camera 2.
+            </div>
+        </td>
+    </table>
+    <br><br>
+
+    <table align="center" width="800px">
+        <td>
+            <div>
+            <span style="font-size:18px"> <b>Dataset Licence.</b>Please follow the <a href="./resources/licence.txt">LICENSE_Change_Clothes</a>.
+                You are free to share, create and adapt the VC-Clothes and Real28 dataset, in the manner specified in the license.
+            </div>
+        </td>
+    </table>
+    <br><br>
+
+    <hr>
+    <div class="center-div">
+        <h1 id="paper">Paper, Code and Data</h1>
+    </div>
+    <table align="center" width="600px">
+
+        <tbody>
+            <tr>
+                <td>
+                    <img class="layered-paper-big" style="height:175px" src="./resources/images/page.png">
+                </td>
+                <td>
+                    <span style="font-size:14pt">Fangbin Wan, Yang Wu, Xuelin Qian, Yanwei Fu</span>
+                    <br><br>
+                    <b><span style="display:inline-block;width:600px;font-size:14pt">When Person Re-identification Meets Changing Clothes.
+                    </span></b>
+                    <br><br>
+                    <span style="font-size:20px">
+                        <a href="https://arxiv.org/pdf/2003.04070.pdf">[arXiv]</a> &nbsp; &nbsp;
+                        <a href="./resources/bibtex.txt">[Bibtex]</a> &nbsp; &nbsp; 
+                        <a href="#">[GitHub]</a> &nbsp; &nbsp;
+                        <a href="https://drive.google.com/drive/folders/1gd3PVsbDVlrSzK60BWUf1Y2C6nGMDcRV?usp=sharing">[Google Drive]</a>
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+    
+    <br><br>
+    <hr>
+    <table align="center" width="980px">
+        <tbody>
+            <tr>
+                <td>
+                    <left>
+                        <div class="center-div">
+                            <h1>Acknowledgements</h1>
+                        </div>
+                        <div class="center-div">
+                            The website is modified from this <a href="https://www.cs.cmu.edu/~wyuan1/pcn/">template</a>.
+                        </div>
+                    </left>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+
+
+</body>
+
+</html>

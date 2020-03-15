@@ -1,0 +1,6 @@
+@article{wan2020person,
+  title={When Person Re-identification Meets Changing Clothes},
+  author={Wan, Fangbin and Wu, Yang and Qian, Xuelin and Fu, Yanwei},
+  journal={arXiv preprint arXiv:2003.04070},
+  year={2020}
+}
